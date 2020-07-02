@@ -1,0 +1,36 @@
+button {
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+.icon-1,
+.icon-2 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+}
+.icon-1 {
+  left: 0px;
+  transition: transform 300ms ease, left 300ms ease 400ms;
+}
+.icon-2 {
+  right: 0px;
+  transition: transform 300ms ease, right 300ms ease 400ms;
+}
+button:hover .icon-1 {
+  transform: translateY(20px);
+  left: 20px;
+  fill: aquamarine;
+}
+button:hover .icon-2 {
+  transform: translateY(-20px);
+  right: 20px;
+  fill: brown;
+}
+button:hover {
+  color: red;
+  background-color: yellow;
+}
