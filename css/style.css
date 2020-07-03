@@ -904,6 +904,9 @@ main {
 .modal > label {
   position: absolute;
 }
+textarea {
+  position: absolute;
+}
 .modal-p {
   padding-top: 40px;
   font-family: Roboto;
@@ -1004,6 +1007,7 @@ main {
 .label-tell,
 .label-email,
 .label-comments {
+  display: flex;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -1011,4 +1015,39 @@ main {
   line-height: 16px;
   letter-spacing: 0.01em;
   color: #757575;
+}
+.modal-comments {
+  resize: none;
+}
+.label-dog {
+  position: absolute;
+  top: 437px;
+  left: 77px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+.dog {
+  top: 442px;
+  left: 54px;
+}
+.link-dog {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+
+  color: #2196f3;
 }
