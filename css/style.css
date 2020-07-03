@@ -941,11 +941,26 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
+.modal-hov {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .asd:hover .modal-hov,
 .asd:focus-within .modal-hov {
   color: var(--link);
   transform: translate(-26px, -34px);
+}
+.asd:hover .icon-person,
+.asd:focus-within .icon-person {
+  fill: var(--link);
+}
+.asd:hover .icon-phone,
+.asd:focus-within .icon-phone {
+  fill: var(--link);
+}
+.asd:hover .icon-email,
+.asd:focus-within .icon-email {
+  fill: var(--link);
 }
 
 .modal-tell {
@@ -962,6 +977,9 @@ textarea {
 
   padding-left: 16px;
   padding-top: 12px;
+}
+.modal-hov1 {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .asd1:hover .modal-hov1,
 .asd1:focus-within .modal-hov1 {
@@ -1081,3 +1099,7 @@ textarea {
 
   color: #2196f3;
 }
+.backdrop {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+
