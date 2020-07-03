@@ -981,12 +981,12 @@ main {
 }
 
 .label-tell {
-  top: 173px;
+  top: 172px;
   left: 57px;
   z-index: 1;
 }
 .label-email {
-  top: 241px;
+  top: 240px;
   left: 57px;
   z-index: 1;
 }
@@ -1010,6 +1010,5 @@ main {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.01em;
-
   color: #757575;
 }
