@@ -900,8 +900,8 @@ main {
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-.modal > input,
-.modal > label {
+.modal input,
+.modal label {
   position: absolute;
 }
 textarea {
@@ -927,8 +927,10 @@ textarea {
   left: 50%;
   padding-left: 42px;
   transform: translateX(-50%);
+
   width: 448px;
   height: 40px;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -937,9 +939,15 @@ textarea {
   letter-spacing: 0.01em;
   color: #757575;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  /* box-sizing: border-box; */
   border-radius: 4px;
 }
+
+.asd:hover .modal-hov,
+.asd:focus-within .modal-hov {
+  color: var(--link);
+  transform: translate(-26px, -34px);
+}
+
 .modal-tell {
   top: 161px;
 }
@@ -948,18 +956,27 @@ textarea {
 }
 .modal-comments {
   top: 297px;
+
   width: 448px;
   height: 120px;
+
   padding-left: 16px;
   padding-top: 12px;
+}
+.asd1:hover .modal-hov1,
+.asd1:focus-within .modal-hov1 {
+  color: var(--link);
+  transform: translateY(-34px);
 }
 .go {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: 491px;
+
   width: 200px;
   height: 50px;
+
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -978,17 +995,18 @@ textarea {
   top: 8px;
   right: 8px;
   padding: 0;
+
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
-.svg-close:hover {
-  fill: #2196f3;
-  cursor: pointer;
-}
 .svg-close {
   display: flex;
   fill: #757575;
+}
+.svg-close:hover {
+  fill: #2196f3;
+  cursor: pointer;
 }
 .label-name {
   top: 104px;
@@ -1036,12 +1054,12 @@ textarea {
   position: absolute;
   top: 437px;
   left: 77px;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  /* identical to box height, or 171% */
 
   letter-spacing: 0.03em;
 
@@ -1057,7 +1075,6 @@ textarea {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  /* identical to box height, or 171% */
 
   letter-spacing: 0.03em;
   text-decoration-line: underline;
