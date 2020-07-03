@@ -868,3 +868,148 @@ main {
   background-color: var(--link);
   cursor: pointer;
 }
+/*  */
+/*  */
+/*  */
+/* Modal  */
+/*  */
+/*  */
+/*  */
+
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.modal > input,
+.modal > label {
+  position: absolute;
+}
+.modal-p {
+  padding-top: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.modal-name,
+.modal-tell,
+.modal-email,
+.modal-comments {
+  top: 93px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 448px;
+  height: 40px;
+}
+.modal-tell {
+  top: 161px;
+}
+.modal-email {
+  top: 229px;
+}
+.modal-comments {
+  top: 297px;
+  width: 448px;
+  height: 120px;
+}
+.go {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 491px;
+  width: 200px;
+  height: 50px;
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.svg-close:hover {
+  fill: #2196f3;
+  cursor: pointer;
+}
+.svg-close {
+  display: flex;
+  fill: #757575;
+}
+.label-name {
+  top: 104px;
+  left: 57px;
+  z-index: 1;
+}
+
+.label-tell {
+  top: 173px;
+  left: 57px;
+  z-index: 1;
+}
+.label-email {
+  top: 241px;
+  left: 57px;
+  z-index: 1;
+}
+.label-comments {
+  top: 309px;
+  left: 57px;
+  z-index: 1;
+}
+.icon-person,
+.icon-phone,
+.icon-email {
+  margin-right: 8px;
+}
+.label-name,
+.label-tell,
+.label-email,
+.label-comments {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
