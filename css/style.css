@@ -945,8 +945,8 @@ textarea {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.asd:hover .modal-hov,
-.asd:focus-within .modal-hov {
+.asdf:hover + .label-all > .modal-hov,
+.asdf:focus + .label-all > .modal-hov {
   color: var(--link);
   transform: translate(-26px, -34px);
 }
@@ -954,16 +954,16 @@ textarea {
   color: var(--link);
   transform: translate(-26px, -34px);
 }
-.modal-hov .asd:hover .icon-person,
-.asd:focus-within .icon-person {
+.asdf:hover + .label-all > .icon-person,
+.asdf:focus + .label-all > .icon-person {
   fill: var(--link);
 }
-.asd:hover .icon-phone,
-.asd:focus-within .icon-phone {
+.asdf:hover + .label-all > .icon-phone,
+.asdf:focus + .label-all > .icon-phone {
   fill: var(--link);
 }
-.asd:hover .icon-email,
-.asd:focus-within .icon-email {
+.asdf:hover + .label-all > .icon-email,
+.asdf:focus + .label-all > .icon-email {
   fill: var(--link);
 }
 
@@ -985,9 +985,9 @@ textarea {
 .modal-hov1 {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.asd1:hover + .label-comments,
-.asd1:focus-within + .label-comments,
-.asd1:not(:placeholder-shown) + .label-comments {
+.asd1:hover + .label-comments > .modal-hov1,
+.asd1:focus + .label-comments > .modal-hov1,
+.asd1:not(:placeholder-shown) + .label-comments > .modal-hov1 {
   color: var(--link);
   transform: translateY(-34px);
 }
