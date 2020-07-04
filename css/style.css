@@ -1122,7 +1122,7 @@ textarea {
   fill: #ffffff;
   background: #2196f3;
   border-radius: 2px;
-  border: 2px solid var(--link);
+  border: 0px;
 }
 
 .backdrop {
