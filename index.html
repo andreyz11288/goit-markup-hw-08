@@ -507,17 +507,20 @@
             ><span class="modal-hov1">Комментарий</span></label
           >
 
-          <label class="label-contract" for="contract"
-            >Соглашаюсь с рассылкой и принимаю
-            <a class="link-contract" href="">Условия договора</a></label
-          >
-          <input
-            class="contract"
-            type="checkbox"
-            name="contract"
-            value="contract"
-            id="contract"
-          />
+          <label class="label-contract"
+            ><input
+              class="contract"
+              type="checkbox"
+              name="contract"
+              value="contract"
+            /><svg class="icon-check">
+              <use href="./images/sprite.svg#icon-check"></use>
+            </svg>
+            <span
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="link-contract" href="">Условия договора</a></span
+            >
+          </label>
 
           <button data-modal-close-go type="submit" class="go">
             Отправить

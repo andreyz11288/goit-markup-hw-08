@@ -1069,8 +1069,14 @@ textarea {
 
 .label-contract {
   position: absolute;
+
   top: 437px;
-  left: 77px;
+  left: 54px;
+
+  display: flex;
+  align-items: center;
+
+  width: 423px;
 
   font-family: Roboto;
   font-style: normal;
@@ -1083,11 +1089,16 @@ textarea {
   color: #757575;
 }
 
-.contract {
-  top: 442px;
-  left: 54px;
+.label-contract span {
+  /* top: 442px;
+  left: 54px; */
+  padding-left: 6px;
 }
-
+.contract {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 .link-contract {
   font-family: Roboto;
   font-style: normal;
@@ -1099,6 +1110,19 @@ textarea {
   text-decoration-line: underline;
 
   color: #2196f3;
+}
+.icon-check {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--main-color);
+  border-radius: 2px;
+  fill: transparent;
+}
+.contract:checked + .icon-check {
+  fill: #ffffff;
+  background: #2196f3;
+  border-radius: 2px;
+  border: 2px solid var(--link);
 }
 
 .backdrop {
