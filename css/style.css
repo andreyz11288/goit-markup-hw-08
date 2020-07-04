@@ -954,18 +954,7 @@ textarea {
   color: var(--link);
   transform: translate(-26px, -34px);
 }
-/* .asdf:hover + .label-all > .icon-person,
-.asdf:focus + .label-all > .icon-person {
-  fill: var(--link);
-}
-.asdf:hover + .label-all > .icon-phone,
-.asdf:focus + .label-all > .icon-phone {
-  fill: var(--link);
-}
-.asdf:hover + .label-all > .icon-email,
-.asdf:focus + .label-all > .icon-email {
-  fill: var(--link);
-} */
+
 .asdf:hover ~ label > svg,
 .asdf:focus ~ label > svg,
 .asdf:not(:placeholder-shown) ~ label > svg {
