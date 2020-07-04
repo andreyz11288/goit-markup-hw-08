@@ -954,7 +954,7 @@ textarea {
   color: var(--link);
   transform: translate(-26px, -34px);
 }
-.asdf:hover + .label-all > .icon-person,
+/* .asdf:hover + .label-all > .icon-person,
 .asdf:focus + .label-all > .icon-person {
   fill: var(--link);
 }
@@ -965,8 +965,12 @@ textarea {
 .asdf:hover + .label-all > .icon-email,
 .asdf:focus + .label-all > .icon-email {
   fill: var(--link);
+} */
+.asdf:hover ~ label > svg,
+.asdf:focus ~ label > svg,
+.asdf:not(:placeholder-shown) ~ label > svg {
+  fill: var(--link);
 }
-
 .modal-tell {
   top: 161px;
 }
@@ -981,6 +985,8 @@ textarea {
 
   padding-left: 16px;
   padding-top: 12px;
+
+  resize: none;
 }
 .modal-hov1 {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1035,29 +1041,29 @@ textarea {
 .label-name {
   top: 104px;
   left: 57px;
-  z-index: 1;
 }
 
 .label-tell {
   top: 172px;
   left: 57px;
-  z-index: 1;
 }
+
 .label-email {
   top: 240px;
   left: 57px;
-  z-index: 1;
 }
+
 .label-comments {
   top: 309px;
   left: 57px;
-  z-index: 1;
 }
+
 .icon-person,
 .icon-phone,
 .icon-email {
   margin-right: 8px;
 }
+
 .label-name,
 .label-tell,
 .label-email,
@@ -1071,10 +1077,8 @@ textarea {
   letter-spacing: 0.01em;
   color: #757575;
 }
-.modal-comments {
-  resize: none;
-}
-.label-dog {
+
+.label-contract {
   position: absolute;
   top: 437px;
   left: 77px;
@@ -1089,11 +1093,13 @@ textarea {
 
   color: #757575;
 }
-.dog {
+
+.contract {
   top: 442px;
   left: 54px;
 }
-.link-dog {
+
+.link-contract {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -1105,6 +1111,7 @@ textarea {
 
   color: #2196f3;
 }
+
 .backdrop {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
