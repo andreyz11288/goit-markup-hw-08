@@ -1030,22 +1030,22 @@ textarea {
 }
 .label-name {
   top: 104px;
-  left: 57px;
+  /* left: 57px; */
 }
 
 .label-tell {
   top: 172px;
-  left: 57px;
+  /* left: 57px; */
 }
 
 .label-email {
   top: 240px;
-  left: 57px;
+  /* left: 57px; */
 }
 
 .label-comments {
   top: 309px;
-  left: 57px;
+  /* left: 57px; */
 }
 
 .icon-person,
@@ -1059,6 +1059,7 @@ textarea {
 .label-email,
 .label-comments {
   display: flex;
+  left: 57px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -1090,9 +1091,7 @@ textarea {
   color: #757575;
 }
 
-.label-contract span {
-  /* top: 442px;
-  left: 54px; */
+.span-link {
   padding-left: 6px;
 }
 .contract {
@@ -1112,7 +1111,8 @@ textarea {
 
   color: #2196f3;
 }
-.icon-check {
+/* Чек через свг */
+/* .icon-check {
   width: 16px;
   height: 15px;
   border: 2px solid var(--main-color);
@@ -1124,8 +1124,22 @@ textarea {
   background: #2196f3;
   border-radius: 2px;
   border: 0px;
+} */
+/*  */
+/*  */
+/* Чек через псевдоэлемент */
+.check::before {
+  display: flex;
+  content: " ";
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--main-color);
 }
-
+.contract:checked ~ .check::before {
+  border: 0px;
+  background: #2196f3;
+  background-image: url(../images/check.svg);
+}
 .backdrop {
   transition: 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
