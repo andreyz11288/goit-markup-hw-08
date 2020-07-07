@@ -1150,6 +1150,5 @@ textarea {
 .modal textarea:hover {
   outline: none;
   border: 1px solid #2196f3;
-  /* box-sizing: border-box; */
   border-radius: 4px;
 }
