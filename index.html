@@ -428,7 +428,7 @@
             </li>
           </ul>
         </section>
-        <section class="section-mailing">
+        <form class="section-mailing">
           <h3 class="mailing">Подпишитесь на рассылку</h3>
           <div class="mailing-content">
             <label for="footer-email"></label>
@@ -444,99 +444,99 @@
                 <use href="./images/sprite.svg#icon-icon-send"></use></svg
             ></a>
           </div>
-        </section>
+        </form>
       </div>
     </footer>
     <!-- Модальное окно -->
-    <section>
-      <form data-modal class="js-speaker-form backdrop is-hidden">
-        <div class="modal">
-          <p class="modal-p">Оставьте свои данные, мы вам перезвоним</p>
 
-          <input
-            class="modal-name asdf"
-            type="text"
-            name="name"
-            id="name"
-            placeholder=" "
+    <form data-modal class="js-speaker-form backdrop is-hidden">
+      <div class="modal">
+        <p class="modal-p">Оставьте свои данные, мы вам перезвоним</p>
+
+        <input
+          class="modal-name asdf"
+          type="text"
+          name="name"
+          id="name"
+          placeholder=" "
+        />
+        <label class="label-name label-all" for="name">
+          <svg width="18" height="18" class="icon-person">
+            <use href="./images/sprite.svg#icon-person-black"></use>
+          </svg>
+          <span class="modal-hov">Имя</span></label
+        >
+
+        <input
+          class="modal-tell asdf"
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder=" "
+        />
+        <label class="label-tell label-all" for="tel"
+          ><svg width="18" height="18" class="icon-phone">
+            <use href="./images/sprite.svg#icon-phone-black"></use>
+          </svg>
+          <span class="modal-hov">Телефон</span></label
+        >
+
+        <input
+          class="modal-email asdf"
+          type="email"
+          name="email"
+          id="email"
+          placeholder=" "
+        />
+        <label class="label-email label-all" for="email"
+          ><svg width="18" height="18" class="icon-email">
+            <use href="./images/sprite.svg#icon-email-black"></use>
+          </svg>
+          <span class="modal-hov">Почта</span></label
+        >
+
+        <textarea
+          class="modal-comments asd1"
+          name="comments"
+          id="comments"
+          cols="30"
+          rows="10"
+          placeholder=" "
+        ></textarea>
+        <label class="label-comments" for="comments"
+          ><span class="modal-hov1">Комментарий</span></label
+        >
+
+        <label class="label-contract"
+          ><input
+            class="contract"
+            type="checkbox"
+            name="contract"
+            value="contract"
           />
-          <label class="label-name label-all" for="name">
-            <svg width="18" height="18" class="icon-person">
-              <use href="./images/sprite.svg#icon-person-black"></use>
-            </svg>
-            <span class="modal-hov">Имя</span></label
-          >
-
-          <input
-            class="modal-tell asdf"
-            type="tel"
-            name="tel"
-            id="tel"
-            placeholder=" "
-          />
-          <label class="label-tell label-all" for="tel"
-            ><svg width="18" height="18" class="icon-phone">
-              <use href="./images/sprite.svg#icon-phone-black"></use>
-            </svg>
-            <span class="modal-hov">Телефон</span></label
-          >
-
-          <input
-            class="modal-email asdf"
-            type="email"
-            name="email"
-            id="email"
-            placeholder=" "
-          />
-          <label class="label-email label-all" for="email"
-            ><svg width="18" height="18" class="icon-email">
-              <use href="./images/sprite.svg#icon-email-black"></use>
-            </svg>
-            <span class="modal-hov">Почта</span></label
-          >
-
-          <textarea
-            class="modal-comments asd1"
-            name="comments"
-            id="comments"
-            cols="30"
-            rows="10"
-            placeholder=" "
-          ></textarea>
-          <label class="label-comments" for="comments"
-            ><span class="modal-hov1">Комментарий</span></label
-          >
-
-          <label class="label-contract"
-            ><input
-              class="contract"
-              type="checkbox"
-              name="contract"
-              value="contract"
-            />
-            <span class="check"></span>
-            <!-- Чек через свг -->
-            <!-- <svg class="icon-check">
+          <span class="check"></span>
+          <!-- Чек через свг -->
+          <!-- <svg class="icon-check">
               <use href="./images/sprite.svg#icon-check"></use>
             </svg> -->
-            <!--  -->
-            <span class="span-link"
-              >Соглашаюсь с рассылкой и принимаю
-              <a class="link-contract" href="">Условия договора</a></span
-            >
-          </label>
+          <!--  -->
+          <span class="span-link"
+            >Соглашаюсь с рассылкой и принимаю
+            <a class="link-contract" href="">Условия договора</a></span
+          >
+        </label>
 
-          <button data-modal-close-go type="submit" class="go">
-            Отправить
-          </button>
-          <button data-modal-close class="modal-close">
-            <svg width="30" height="30" class="svg-close">
-              <use xlink:href="./images/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </form>
-    </section>
+        <button data-modal-close-go type="submit" class="go">
+          Отправить
+        </button>
+        <button data-modal-close class="modal-close">
+          <svg width="30" height="30" class="svg-close">
+            <use xlink:href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+
     <script src="./modal.js"></script>
   </body>
 </html>
