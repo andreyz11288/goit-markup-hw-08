@@ -1,4 +1,6 @@
-@import "./utils/./variables";
+@import "./utils/./variables.scss";
 @import "./utils/_normalize.scss";
-@import "./utils/root.scss";
-@import "./c"
+@import "./utils/root";
+@import "./components/header/header-logo";
+@import "./components/header/nav";
+@import "./components/header/address";
