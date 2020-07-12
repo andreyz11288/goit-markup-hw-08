@@ -44,24 +44,24 @@ a {
 /*  */
 /*  */
 
-.studio,
+/* .studio,
 .portfolio,
 .contact {
   display: block;
-  /* outline: 2px solid red; */
+ 
   padding-top: 32px;
   padding-bottom: 32px;
-}
+} */
 
-.container-header {
-  /* outline: 2px solid red; */
+/* .container-header {
+  
   display: flex;
   border-bottom: 1px solid #ececec;
-}
-.heder-address {
+} */
+/* .heder-address {
   margin-left: auto;
-}
-.header-logo {
+} */
+/* .header-logo {
   min-width: 153px;
   padding-top: 24px;
   font-family: Raleway;
@@ -78,13 +78,13 @@ a {
 }
 .logo-studio {
   color: var(--black-color);
-}
+} */
 .logo-studio-footer {
   color: var(--white-color);
 }
-.n-menu {
+/* .n-menu {
   display: flex;
-  /* margin-right: 305px; */
+  
 }
 .nav-menu {
   display: flex;
@@ -96,9 +96,9 @@ a {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--main-color);
-}
+} */
 
-.section-nav-contact {
+/* .section-nav-contact {
   display: flex;
   align-items: baseline;
   font-family: Roboto;
@@ -108,15 +108,15 @@ a {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--second-color);
-}
-.nav-menu li {
+} */
+/* .nav-menu li {
   position: relative;
-}
-.section-nav-contact > li:first-child {
+} */
+/* .section-nav-contact > li:first-child {
   margin-right: 30px;
-}
+} */
 
-.nav-menu > li:not(:last-child) {
+/* .nav-menu > li:not(:last-child) {
   margin-right: 50px;
 }
 .nav-menu-first {
@@ -133,23 +133,23 @@ a {
   height: 4px;
   border-radius: 2px;
   background-color: var(--link);
-  /* opacity: 0; */
+  
   transform: scaleX(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-menu-first:hover::after,
 .nav-menu-first:focus::after {
-  /* opacity: 1; */
+
   transform: scaleX(1);
 }
 .nav-menu-first:hover,
 .nav-menu-first:focus {
   color: var(--link);
   cursor: pointer;
-}
+} */
 
-.nav-email,
+/* .nav-email,
 .nav-tel {
   display: flex;
   min-width: 142px;
@@ -158,7 +158,7 @@ a {
   padding-top: 32px;
   padding-bottom: 32px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* outline: 2px solid red; */
+  
 }
 .nav-email {
   min-width: 161px;
@@ -188,11 +188,11 @@ a {
   fill: var(--link);
   color: var(--link);
   cursor: pointer;
-}
+} */
 
-main {
+/* main {
   margin-bottom: 94px;
-}
+} */
 /*  */
 /*  */
 /*  */
