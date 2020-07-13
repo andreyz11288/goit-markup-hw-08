@@ -1,18 +1,13 @@
 .header-logo {
   min-width: 153px;
   padding-top: 24px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
+  @extend %logo;
   margin-right: 85px;
 }
 .header-logo,
 .footer-logo {
-  color: var(--link);
+  color: $link;
 }
 .logo-studio {
-  color: var(--black-color);
+  color: $black-color;
 }

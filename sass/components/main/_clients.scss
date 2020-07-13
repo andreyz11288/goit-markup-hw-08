@@ -1,0 +1,39 @@
+.clients {
+  display: flex;
+
+  a {
+    @extend %centerFlex;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    fill: #afb1b8;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border: 1px solid $link;
+      box-sizing: border-box;
+      border-radius: 4px;
+      fill: $link;
+      cursor: pointer;
+    }
+  }
+
+  & > li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.section-clients h2 {
+  font-family: $fontRobo;
+  font-style: $fontNorm;
+  font-weight: $fontBold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $main-color;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,72 @@
+.section-team {
+  width: 1600px;
+  background-color: var(--bgp-features);
+  margin-bottom: 94px;
+
+  h2 {
+    padding-top: 94px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    margin-bottom: 50px;
+  }
+}
+.team {
+  display: flex;
+  padding-bottom: 94px;
+
+  & > li:not(:last-child) {
+    margin-right: 30px;
+  }
+  & > li {
+    background: var(--white-color);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+    margin-bottom: 16px;
+  }
+
+  &-john,
+  &-marta,
+  &-robert,
+  &-martin {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+}
+
+// .team-john,
+// .team-marta,
+// .team-robert,
+// .team-martin {
+//   display: inline-block;
+//   margin-bottom: 30px;
+// }

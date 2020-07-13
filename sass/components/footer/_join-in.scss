@@ -1,0 +1,16 @@
+.join-in {
+  margin-right: 94px;
+
+  & > h3 {
+    padding-top: 73px;
+    margin-bottom: 20px;
+    font-family: $fontRobo;
+    font-style: $fontNorm;
+    font-weight: $fontBold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+  }
+}

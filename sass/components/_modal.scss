@@ -1,0 +1,276 @@
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.is-hidden {
+  transform: scaleY(0);
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+
+  input,
+  label {
+    position: absolute;
+  }
+  &-p {
+    padding-top: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $main-color;
+  }
+  &-hov {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+textarea {
+  position: absolute;
+}
+
+.modal-name,
+.modal-tell,
+.modal-email,
+.modal-comments {
+  top: 93px;
+  left: 50%;
+  padding-left: 42px;
+  transform: translateX(-50%);
+
+  width: 448px;
+  height: 40px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: $second-color;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.asdf:hover + .label-all > .modal-hov,
+.asdf:focus + .label-all > .modal-hov {
+  color: $link;
+  transform: translate(-26px, -34px);
+}
+.asdf:not(:placeholder-shown) + .label-all > .modal-hov {
+  color: $link;
+  transform: translate(-26px, -34px);
+}
+
+.asdf:hover ~ label > svg,
+.asdf:focus ~ label > svg,
+.asdf:not(:placeholder-shown) ~ label > svg {
+  fill: $link;
+}
+.modal-tell {
+  top: 161px;
+}
+.modal-email {
+  top: 229px;
+}
+.modal-comments {
+  top: 297px;
+
+  width: 448px;
+  height: 120px;
+
+  padding-left: 16px;
+  padding-top: 12px;
+
+  resize: none;
+}
+.modal-hov1 {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.asd1:hover + .label-comments > .modal-hov1,
+.asd1:focus + .label-comments > .modal-hov1,
+.asd1:not(:placeholder-shown) + .label-comments > .modal-hov1 {
+  color: $link;
+  transform: translateY(-34px);
+}
+
+.go {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 491px;
+
+  width: 200px;
+  height: 50px;
+
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+
+  color: $white-color;
+}
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+
+  background: $white-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.svg-close {
+  display: flex;
+  fill: #757575;
+
+  &:hover {
+    fill: #2196f3;
+    cursor: pointer;
+  }
+}
+
+.label-name {
+  top: 104px;
+}
+
+.label-tell {
+  top: 172px;
+}
+
+.label-email {
+  top: 240px;
+}
+
+.label-comments {
+  top: 309px;
+}
+
+.icon-person,
+.icon-phone,
+.icon-email {
+  margin-right: 8px;
+}
+
+.label-name,
+.label-tell,
+.label-email,
+.label-comments {
+  display: flex;
+  left: 57px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: $second-color;
+}
+
+.label-contract {
+  position: absolute;
+
+  top: 437px;
+  left: 54px;
+
+  display: flex;
+  align-items: center;
+
+  width: 423px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+
+  color: $second-color;
+}
+
+.span-link {
+  padding-left: 6px;
+}
+.contract {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.link-contract {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+
+  color: $link;
+}
+/* Чек через свг */
+/* .icon-check {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--main-color);
+  border-radius: 2px;
+  fill: transparent;
+}
+.contract:checked + .icon-check {
+  fill: #ffffff;
+  background: #2196f3;
+  border-radius: 2px;
+  border: 0px;
+} */
+/*  */
+/*  */
+/* Чек через псевдоэлемент */
+.check::before {
+  display: flex;
+  content: " ";
+  width: 16px;
+  height: 15px;
+  border: 2px solid $main-color;
+}
+.contract:checked ~ .check::before {
+  border: 0px;
+  background: $link;
+  background-image: url(../images/check.svg);
+}
+
+.backdrop {
+  transition: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal input:focus,
+.modal textarea:focus,
+.modal input:hover,
+.modal textarea:hover {
+  outline: none;
+  border: 1px solid $link;
+  border-radius: 4px;
+}
