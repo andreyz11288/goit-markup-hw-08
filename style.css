@@ -655,22 +655,22 @@ a {
 /*  */
 /*  */
 /*  */
-.head2 {
+/* .head2 {
   margin-bottom: 93px;
-}
+} */
 .portfolio-header {
   width: 1600px;
   border-bottom: 1px solid #ececec;
 }
 
-.section-filter-all {
+/* .section-filter-all {
   margin-bottom: 34px;
 }
 .section-filter {
   display: flex;
   padding-left: 280px;
   min-width: 612px;
-  /* outline: 2px solid red; */
+  
 }
 .section-filter > li:not(:last-child) {
   margin-right: 8px;
@@ -696,8 +696,8 @@ a {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 3px 1px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-}
-.main-content li {
+} */
+/* .main-content li {
   width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
@@ -720,7 +720,7 @@ a {
 .main-content {
   display: flex;
   flex-wrap: wrap;
-  /* outline: 2px solid red; */
+  
 }
 
 .main-h2 {
@@ -775,14 +775,14 @@ a {
   font-size: 18px;
   line-height: 28px;
 
-  /* or 156% */
+ 
   letter-spacing: 0.03em;
 
   color: var(--white-color);
 }
 .main-content a > p {
   color: var(--second-color);
-}
+} */
 
 /* #address a {
   color: var(--second-color);
@@ -884,7 +884,7 @@ a {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .is-hidden {
-  /* opacity: 0; */
+  
   transform: scaleY(0);
   pointer-events: none;
 }
@@ -1029,22 +1029,22 @@ textarea {
 }
 .label-name {
   top: 104px;
-  /* left: 57px; */
+  
 }
 
 .label-tell {
   top: 172px;
-  /* left: 57px; */
+  
 }
 
 .label-email {
   top: 240px;
-  /* left: 57px; */
+  
 }
 
 .label-comments {
   top: 309px;
-  /* left: 57px; */
+  
 }
 
 .icon-person,
@@ -1150,4 +1150,4 @@ textarea {
   outline: none;
   border: 1px solid #2196f3;
   border-radius: 4px;
-} */ 
+} */
