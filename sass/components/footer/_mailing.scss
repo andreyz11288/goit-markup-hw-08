@@ -10,7 +10,9 @@
   color: $white-color;
 
   &-content {
-    display: flex;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
 }
 .goit {
@@ -31,7 +33,12 @@
 
 .footer-input {
   margin-top: 20px;
-  width: 358px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 450px;
+  }
   height: 50px;
   padding-left: 16px;
   background-color: $bgp-footer;
@@ -53,10 +60,17 @@
 }
 
 .footer-button {
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
   width: 200px;
   height: 50px;
   margin-top: 20px;
-  margin-left: 12px;
   padding: 10px 29px;
   background-color: $link;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

@@ -1,7 +1,13 @@
 .social {
-  width: 238px;
   display: flex;
-  padding-left: 32px;
+  @media screen and (min-width: 1200px) {
+    padding-left: 32px;
+    width: 238px;
+  }
+  @media screen and (max-width: 480px) {
+    padding-left: 122px;
+    width: 328px;
+  }
 
   & > li {
     padding-bottom: 24px;
@@ -30,6 +36,9 @@
 
 .social-footer {
   display: flex;
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+  }
 
   svg {
     margin: 12px;

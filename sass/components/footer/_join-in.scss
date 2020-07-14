@@ -1,5 +1,7 @@
 .join-in {
-  margin-right: 94px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 94px;
+  }
 
   & > h3 {
     padding-top: 73px;
@@ -11,6 +13,7 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
     color: $white-color;
   }
 }

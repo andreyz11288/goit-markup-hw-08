@@ -1,6 +1,8 @@
 .display-footer {
-  padding-bottom: 60px;
-  margin-right: 63px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 63px;
+    padding-bottom: 60px;
+  }
 
   & > a {
     display: block;
@@ -49,4 +51,7 @@
 
 .index {
   color: $white-color;
+}
+#address {
+  @extend %centerFlex;
 }

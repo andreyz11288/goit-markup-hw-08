@@ -1,4 +1,7 @@
 .section-work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   margin-bottom: 94px;
 
   h2 {

@@ -1,9 +1,31 @@
 .clients {
-  display: flex;
-
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    & > li:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    width: 480px;
+    li {
+      display: inline-flex;
+      margin-bottom: 30px;
+    }
+    li:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+    li:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
   a {
     @extend %centerFlex;
-    width: 170px;
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
+    @media screen and (max-width: 480px) {
+      width: 210px;
+    }
     height: 90px;
     border: 1px solid #afb1b8;
     box-sizing: border-box;
@@ -20,18 +42,21 @@
       cursor: pointer;
     }
   }
-
-  & > li:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 
 .section-clients h2 {
+  @media screen and (max-width: 480px) {
+    padding-top: 60px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
   font-family: $fontRobo;
   font-style: $fontNorm;
   font-weight: $fontBold;
-  font-size: 36px;
-  line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
   color: $main-color;
