@@ -3,6 +3,10 @@
   padding-top: 24px;
   @extend %logo;
   margin-right: 85px;
+  @media screen and (max-width: 480px) {
+    padding-bottom: 16px;
+    padding-left: 15px;
+  }
 }
 .header-logo,
 .footer-logo {

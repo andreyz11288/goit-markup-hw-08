@@ -2,8 +2,14 @@
   margin-bottom: 98px;
 }
 .overlay {
-  max-width: 1600px;
-  height: 600px;
+  @media screen and (max-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+  }
+  @media screen and (max-width: 480px) {
+    max-width: 480px;
+    height: 400px;
+  }
   background-image: linear-gradient(to right, $bgp, $bgp),
     url(../images/header-img.jpg);
   background-color: $second-color;

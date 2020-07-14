@@ -1,13 +1,16 @@
 .container {
-  width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 2px solid red; */
+  @media screen and (max-width: 480px) {
+    width: 450px;
+  }
 }
 .container2 {
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (max-width: 480px) {
+    width: 480px;
+  }
 }
 h2,
 h3 {
@@ -29,7 +32,7 @@ main {
 }
 .container-header {
   /* outline: 2px solid red; */
-  display: flex;
+  // display: flex;
   border-bottom: 1px solid #ececec;
 }
 .head2 {

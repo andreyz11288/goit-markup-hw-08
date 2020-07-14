@@ -1,7 +1,13 @@
 .features {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 
   h3 {
+    @media screen and (max-width: 480px) {
+      display: flex;
+      justify-content: center;
+    }
     font-family: $fontRobo;
     font-style: $fontNorm;
     font-weight: $fontBold;
@@ -21,9 +27,16 @@
     letter-spacing: 0.03em;
     color: $second-color;
   }
+  @media screen and (max-width: 480px) {
+    li {
+      margin-bottom: 30px;
+    }
+  }
 
-  & > li:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (max-width: 1200px) {
+    & > li:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -32,11 +45,22 @@
 }
 
 .features-div {
-  @extend %centerFlex;
-  width: 270px;
-  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: $bgp-features;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 270px;
+    height: 120px;
+  }
 }
 
 .features-link {
