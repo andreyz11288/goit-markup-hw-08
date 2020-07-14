@@ -1,0 +1,13 @@
+.header-logo {
+  min-width: 153px;
+  padding-top: 24px;
+  @extend %logo;
+  margin-right: 85px;
+}
+.header-logo,
+.footer-logo {
+  color: $link;
+}
+.logo-studio {
+  color: $black-color;
+}

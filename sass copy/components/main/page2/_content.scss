@@ -1,0 +1,87 @@
+.main-content li {
+  width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background: $white-color;
+  border: 1px solid #eeeeee;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > li:nth-child(3n) {
+    margin-right: 0px;
+  }
+  & > li:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
+  a > p {
+    color: $second-color;
+  }
+}
+
+.main-h2 {
+  font-family: $fontRobo;
+  font-style: $fontNorm;
+  font-weight: $fontBold;
+  font-size: 18px;
+  line-height: 36px;
+  margin-bottom: 4px;
+  padding-left: 24px;
+  letter-spacing: 0.06em;
+  color: $main-color;
+}
+
+.blackout > p {
+  font-family: $fontRobo;
+  font-style: $fontNorm;
+  font-weight: $fontNorm;
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 24px;
+  letter-spacing: 0.03em;
+  color: $second-color;
+}
+.images-box {
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.background-hov-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity $transition, transform $transition;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  .blackout:hover &,
+  .blackout:focus & {
+    opacity: 0.8;
+    transform: translateY(-297px);
+    cursor: pointer;
+  }
+}
+
+.hov-text {
+  display: inline-block;
+  padding: 63px 24px;
+  font-family: $fontRobo;
+  font-style: $fontNorm;
+  font-weight: $fontNorm;
+  font-size: 18px;
+  line-height: 28px;
+
+  letter-spacing: 0.03em;
+
+  color: $white-color;
+}

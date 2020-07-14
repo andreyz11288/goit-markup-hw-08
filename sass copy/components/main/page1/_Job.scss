@@ -1,0 +1,52 @@
+.section-work {
+  margin-bottom: 94px;
+
+  h2 {
+    text-align: center;
+    font-family: $fontRobo;
+    font-style: $fontNorm;
+    font-weight: $fontBold;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: $main-color;
+    margin-bottom: 50px;
+  }
+}
+.work-desktop,
+.work-mobile,
+.work-design {
+  display: block;
+  position: relative;
+  height: 294px;
+}
+
+.work {
+  display: flex;
+
+  li {
+    width: 370px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.prof {
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  font-family: $fontRobo;
+  font-style: $fontNorm;
+  font-weight: $fontBold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+  background: $bgp;
+}
