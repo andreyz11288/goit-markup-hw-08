@@ -4,7 +4,7 @@
   }
 
   h3 {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
       display: flex;
       justify-content: center;
     }
@@ -27,7 +27,7 @@
     letter-spacing: 0.03em;
     color: $second-color;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     li {
       margin-bottom: 30px;
     }
@@ -44,7 +44,7 @@
   @media screen and (min-width: 1200px) {
     margin-bottom: 94px;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
 }
@@ -58,7 +58,7 @@
   background-color: $bgp-features;
   margin-bottom: 30px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     width: 450px;
   }
 

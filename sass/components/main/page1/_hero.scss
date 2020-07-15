@@ -1,18 +1,19 @@
 // .header-backgroup {
 // }
 .overlay {
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(to right, $bgp, $bgp),
       url(../images/header-img.jpg);
     margin-bottom: 98px;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     width: 480px;
     height: 400px;
     background-image: linear-gradient(to right, $bgp, $bgp),
       url(../images/header-img480.jpg);
+
     margin-bottom: 60px;
   }
 
@@ -50,12 +51,12 @@
   font-family: $fontRobo;
   font-style: $fontNorm;
   font-weight: $font900;
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 136%;
     padding-top: 200px;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     font-size: 26px;
     line-height: 42px;
     padding-top: 118px;

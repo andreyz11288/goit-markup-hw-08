@@ -1,29 +1,31 @@
-.modal-menu-open {
-  margin-left: auto;
-  background-color: transparent;
-  border: none;
-  .icon-cross {
+@media screen and (max-width: 767px) {
+  .modal-menu-open {
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    .icon-cross {
+      display: none;
+    }
+    &.is-open .icon-cross {
+      display: block;
+    }
+    &.is-open + .modal-menu {
+      display: block;
+    }
+    &.is-open .icon-menu {
+      display: none;
+    }
+  }
+
+  .modal-menu {
+    position: absolute;
+
+    top: 60px;
+    left: -15px;
     display: none;
-  }
-  &.is-open .icon-cross {
-    display: block;
-  }
-  &.is-open + .modal-menu {
-    display: block;
-  }
-  &.is-open .icon-menu {
-    display: none;
-  }
-}
 
-.modal-menu {
-  position: absolute;
-
-  top: 60px;
-  left: 0px;
-  display: none;
-
-  width: 480px;
-  height: 453px;
-  background-color: red;
+    width: 480px;
+    height: 453px;
+    background-color: magenta;
+  }
 }

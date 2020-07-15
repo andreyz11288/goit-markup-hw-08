@@ -15,8 +15,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    height: 609px;
+  }
   background: #ffffff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -31,8 +37,16 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      line-height: 30px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 20px;
+      line-height: 23px;
+    }
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -51,12 +65,18 @@ textarea {
 .modal-tell,
 .modal-email,
 .modal-comments {
-  top: 93px;
-  left: 50%;
+  @media screen and (min-width: 1200px) {
+    top: 93px;
+    width: 448px;
+  }
+  @media screen and (max-width: 767px) {
+    top: 130px;
+    width: 370px;
+  }
   padding-left: 42px;
+  left: 50%;
   transform: translateX(-50%);
 
-  width: 448px;
   height: 40px;
 
   font-family: Roboto;
@@ -86,15 +106,31 @@ textarea {
   fill: $link;
 }
 .modal-tell {
-  top: 161px;
+  @media screen and (min-width: 1200px) {
+    top: 161px;
+  }
+  @media screen and (max-width: 767px) {
+    top: 198px;
+  }
 }
 .modal-email {
-  top: 229px;
+  @media screen and (min-width: 1200px) {
+    top: 229px;
+  }
+  @media screen and (max-width: 767px) {
+    top: 266px;
+  }
 }
 .modal-comments {
-  top: 297px;
+  @media screen and (min-width: 1200px) {
+    top: 297px;
+    width: 448px;
+  }
+  @media screen and (max-width: 767px) {
+    top: 334px;
+    width: 370px;
+  }
 
-  width: 448px;
   height: 120px;
 
   padding-left: 16px;
@@ -116,7 +152,12 @@ textarea {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 491px;
+  @media screen and (min-width: 1200px) {
+    top: 491px;
+  }
+  @media screen and (max-width: 767px) {
+    top: 519px;
+  }
 
   width: 200px;
   height: 50px;
@@ -155,19 +196,39 @@ textarea {
 }
 
 .label-name {
-  top: 104px;
+  @media screen and (min-width: 1200px) {
+    top: 104px;
+  }
+  @media screen and (max-width: 767px) {
+    top: 142px;
+  }
 }
 
 .label-tell {
-  top: 172px;
+  @media screen and (min-width: 1200px) {
+    top: 172px;
+  }
+  @media screen and (max-width: 767px) {
+    top: 210px;
+  }
 }
 
 .label-email {
-  top: 240px;
+  @media screen and (min-width: 1200px) {
+    top: 240px;
+  }
+  @media screen and (max-width: 767px) {
+    top: 278px;
+  }
 }
 
 .label-comments {
-  top: 309px;
+  @media screen and (min-width: 1200px) {
+    top: 309px;
+  }
+  @media screen and (max-width: 767px) {
+    top: 346px;
+  }
 }
 
 .icon-person,
@@ -193,9 +254,14 @@ textarea {
 
 .label-contract {
   position: absolute;
-
-  top: 437px;
-  left: 54px;
+  @media screen and (min-width: 1200px) {
+    top: 437px;
+    left: 54px;
+  }
+  @media screen and (max-width: 767px) {
+    top: 474px;
+    left: 40px;
+  }
 
   display: flex;
   align-items: center;
@@ -205,8 +271,14 @@ textarea {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
 
   letter-spacing: 0.03em;
 
@@ -225,9 +297,14 @@ textarea {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
   letter-spacing: 0.03em;
   text-decoration-line: underline;
 
