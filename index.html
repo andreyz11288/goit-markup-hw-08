@@ -19,11 +19,30 @@
           <a class="header-logo" href="./index.html"
             >Web <span class="logo-studio">Studio</span></a
           >
-          <button data-modal-open1 class="modal-menu-open">
-            <svg width="40" height="40" class="svg-modal-menu">
-              <use href="./images/480/menu_40px.svg"></use>
+
+          <button
+            aria-expanded="false"
+            data-menu-button
+            class="modal-menu-open"
+          >
+            <svg
+              aria-label="Переключатель меню"
+              width="40"
+              height="40"
+              class="svg-modal-menu"
+            >
+              <use
+                class="icon-menu"
+                href="./images/sprite.svg#icon-menu-40px"
+              ></use>
+              <use
+                class="icon-cross"
+                href="./images/sprite.svg#icon-close-40px"
+              ></use>
             </svg>
           </button>
+          <div data-menu-button class="modal-menu"></div>
+
           <ul class="nav-menu">
             <li>
               <a class="studio nav-menu-first current" href="./index.html"
@@ -545,17 +564,6 @@
         </button>
         <button data-modal-close class="modal-close">
           <svg width="30" height="30" class="svg-close">
-            <use xlink:href="./images/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </form>
-    <!-- Модальное окно Хедера -->
-
-    <form data-modal1>
-      <div class="modal-menu">
-        <button data-modal-close1 class="modal-menu-close">
-          <svg width="30" height="30" class="svg-menu-close">
             <use xlink:href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
