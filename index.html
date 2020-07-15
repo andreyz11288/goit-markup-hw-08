@@ -19,6 +19,11 @@
           <a class="header-logo" href="./index.html"
             >Web <span class="logo-studio">Studio</span></a
           >
+          <button data-modal-open1 class="modal-menu-open">
+            <svg width="40" height="40" class="svg-modal-menu">
+              <use href="./images/480/menu_40px.svg"></use>
+            </svg>
+          </button>
           <ul class="nav-menu">
             <li>
               <a class="studio nav-menu-first current" href="./index.html"
@@ -176,8 +181,8 @@
                   class="team-li team-john"
                   src="./images/img.jpg"
                   alt="фото"
-                  width="450"
-                  height="440"
+                  width="270"
+                  height="260"
                 />
               </div>
               <h3>Николай Кучеренко</h3>
@@ -545,7 +550,19 @@
         </button>
       </div>
     </form>
+    <!-- Модальное окно Хедера -->
+
+    <form data-modal1>
+      <div class="modal-menu">
+        <button data-modal-close1 class="modal-menu-close">
+          <svg width="30" height="30" class="svg-menu-close">
+            <use xlink:href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
 
     <script src="./modal.js"></script>
+    <script src="./modal1.js"></script>
   </body>
 </html>

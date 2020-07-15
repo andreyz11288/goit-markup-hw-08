@@ -374,6 +374,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .nav-menu {
@@ -399,7 +400,7 @@ main {
 
 @media screen and (max-width: 767px) {
   .nav-menu {
-    display: none;
+    opacity: 0;
   }
 }
 
@@ -442,7 +443,7 @@ main {
 
 @media screen and (max-width: 767px) {
   .heder-address {
-    display: none;
+    opacity: 0;
   }
 }
 
@@ -505,6 +506,18 @@ main {
   width: 11px;
   height: 17px;
   margin-right: 10px;
+}
+
+.modal-menu-open {
+  margin-left: auto;
+}
+
+.modal-menu {
+  position: absolute;
+  top: 60px;
+  width: 480px;
+  height: 453px;
+  background-color: red;
 }
 
 .overlay {
@@ -827,6 +840,9 @@ main {
 }
 
 @media screen and (max-width: 480px) {
+  .team > li:not(:last-child) {
+    margin-bottom: 30px;
+  }
   .team .div-img {
     height: 320px;
     overflow: hidden;
@@ -834,7 +850,7 @@ main {
   }
 }
 
-.team li {
+.team > li {
   background: #ffffff;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
