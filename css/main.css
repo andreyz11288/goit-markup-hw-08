@@ -335,8 +335,10 @@ main {
   border-bottom: 1px solid #ececec;
 }
 
-.head2 {
-  margin-bottom: 93px;
+@media screen and (min-width: 1200px) {
+  .head2 {
+    margin-bottom: 93px;
+  }
 }
 
 .header-logo {
@@ -1618,6 +1620,7 @@ textarea {
 }
 
 .section-filter-all {
+  padding-top: 60px;
   margin-bottom: 34px;
 }
 
@@ -1625,12 +1628,30 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 280px;
-  min-width: 612px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-filter {
+    padding-left: 280px;
+    min-width: 612px;
+  }
 }
 
 .section-filter > li:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .section-filter {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .section-filterli:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+  .section-filter > li {
+    margin-bottom: 15px;
+  }
 }
 
 .filter {

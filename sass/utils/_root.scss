@@ -35,5 +35,7 @@ main {
   border-bottom: 1px solid #ececec;
 }
 .head2 {
-  margin-bottom: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 93px;
+  }
 }

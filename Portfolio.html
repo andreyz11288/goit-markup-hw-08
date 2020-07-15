@@ -18,6 +18,28 @@
           <a class="header-logo" href="./index.html"
             >Web <span class="logo-studio">Studio</span></a
           >
+          <button
+            aria-expanded="false"
+            data-menu-button
+            class="modal-menu-open"
+          >
+            <svg
+              aria-label="Переключатель меню"
+              width="40"
+              height="40"
+              class="svg-modal-menu"
+            >
+              <use
+                class="icon-menu"
+                href="./images/sprite.svg#icon-menu-40px"
+              ></use>
+              <use
+                class="icon-cross"
+                href="./images/sprite.svg#icon-close-40px"
+              ></use>
+            </svg>
+          </button>
+          <div data-menu-button class="modal-menu"></div>
           <ul class="nav-menu">
             <li>
               <a class="studio nav-menu-first" href="./index.html">Студия</a>
@@ -343,5 +365,6 @@
       </div>
       <!-- <p class="goit container">2020 | Developed by GoIT Students</p> -->
     </footer>
+    <script src="./modal1.js"></script>
   </body>
 </html>
