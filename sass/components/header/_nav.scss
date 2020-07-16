@@ -2,12 +2,22 @@
 .portfolio,
 .contact {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 8px;
+    padding-top: 40px;
+    &:not(:first-child) {
+      padding-top: 40px;
+    }
+  }
 }
 .n-menu {
   display: flex;
-  // position: relative;
+  position: relative;
 }
 .nav-menu {
   display: flex;
@@ -22,11 +32,18 @@
   li {
     position: relative;
   }
-  li:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    li:not(:last-child) {
+      margin-right: 50px;
+    }
   }
   @media screen and (max-width: 767px) {
     display: none;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
   }
 }
 
