@@ -4,7 +4,12 @@
   }
 
   & > h3 {
-    padding-top: 73px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 73px;
+    }
+    @media screen and (max-width: 767px) {
+      padding-top: 60px;
+    }
     margin-bottom: 20px;
     font-family: $fontRobo;
     font-style: $fontNorm;

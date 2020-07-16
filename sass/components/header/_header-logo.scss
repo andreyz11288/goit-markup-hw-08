@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0.03em;
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 24px;
     font-size: 26px;
     line-height: 31px;

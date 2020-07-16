@@ -7,6 +7,7 @@
   $(document).ready(function () {
     $(".modal-menu-open").click(function () {
       $(".heder-address").toggleClass("is-open");
+      $(".header-backgroup").toggleClass("is-open");
       return false;
     });
   });

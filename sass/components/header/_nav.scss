@@ -40,8 +40,9 @@
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
-    top: 120px;
+    top: 60px;
     left: 50%;
+    z-index: 2;
     transform: translate(-50%);
     text-align: center;
   }

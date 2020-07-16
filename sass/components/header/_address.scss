@@ -6,6 +6,7 @@
     top: 335px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
 
     &.is-open {
       display: block;
@@ -31,13 +32,6 @@
   font-weight: $font500;
   letter-spacing: 0.02em;
   color: $second-color;
-
-  // @media screen and (max-width: 767px) {
-  //   padding-bottom: 16px;
-  //   &:not(:last-child) {
-  //     padding-bottom: 0px;
-  //   }
-  // }
 }
 
 .nav-email,

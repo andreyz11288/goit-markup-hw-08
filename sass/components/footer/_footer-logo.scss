@@ -2,5 +2,17 @@
   color: $white-color;
 }
 .footer-logo {
-  @extend %logo;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    font-size: 26px;
+    line-height: 31px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }

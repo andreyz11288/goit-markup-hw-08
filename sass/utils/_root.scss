@@ -2,7 +2,9 @@
   margin-left: auto;
   margin-right: auto;
   @media screen and (max-width: 767px) {
-    width: 450px;
+    // width: 450px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .container2 {
