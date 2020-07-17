@@ -1,15 +1,22 @@
 .header-logo {
-  min-width: 153px;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0.03em;
   @media screen and (min-width: 1200px) {
+    min-width: 153px;
+    margin-right: 85px;
     padding-top: 24px;
     font-size: 26px;
     line-height: 31px;
   }
-  margin-right: 85px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 16px;
+    padding-top: 26px;
+    font-size: 24px;
+    line-height: 28px;
+    margin-right: 81px;
+  }
   @media screen and (max-width: 767px) {
     padding-bottom: 16px;
     padding-top: 16px;
