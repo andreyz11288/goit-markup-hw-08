@@ -1,11 +1,18 @@
 .clients {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    & > li:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    width: 480px;
+    li {
+      display: inline-flex;
+      margin-bottom: 30px;
+    }
+    li:nth-child(2n + 1) {
       margin-right: 30px;
     }
+    li:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -21,27 +28,20 @@
       }
     }
   }
-  @media screen and (max-width: 767px) {
-    width: 480px;
-    li {
-      display: inline-flex;
-      margin-bottom: 30px;
-    }
-    li:nth-child(2n + 1) {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    & > li:not(:last-child) {
       margin-right: 30px;
-    }
-    li:nth-last-child(-n + 2) {
-      margin-bottom: 0px;
     }
   }
 
   a {
     @extend %centerFlex;
-    @media screen and (min-width: 1200px) {
-      width: 170px;
-    }
     @media screen and (max-width: 767px) {
       width: 210px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 170px;
     }
     height: 90px;
     border: 1px solid #afb1b8;
@@ -67,7 +67,7 @@
     font-size: 28px;
     line-height: 33px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 60px;
     font-size: 28px;
     line-height: 33px;

@@ -2,15 +2,15 @@
   background-color: $bgp-footer;
 }
 .footer {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
   @media screen and (max-width: 767px) {
     text-align: center;
     padding-bottom: 60px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }

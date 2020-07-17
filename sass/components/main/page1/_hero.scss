@@ -6,13 +6,6 @@
   }
 }
 .overlay {
-  @media screen and (min-width: 1200px) {
-    max-width: 1600px;
-    height: 600px;
-    background-image: linear-gradient(to right, $bgp, $bgp),
-      url(../images/header-img.jpg);
-    margin-bottom: 98px;
-  }
   @media screen and (max-width: 767px) {
     width: 480px;
     height: 400px;
@@ -24,6 +17,13 @@
     height: 400px;
     background-image: linear-gradient(to right, $bgp, $bgp),
       url(../../../../images/768/Header-img.jpg);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right, $bgp, $bgp),
+      url(../../../../images/header-img.jpg);
+    margin-bottom: 98px;
   }
   background-color: $second-color;
 }

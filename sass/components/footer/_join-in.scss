@@ -1,21 +1,20 @@
 .join-in {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 165px;
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 94px;
   }
-  @media screen and (min-width: 768px) {
-    margin-left: 165px;
-  }
 
   & > h3 {
-    @media screen and (min-width: 1200px) {
-      padding-top: 73px;
+    @media screen and (max-width: 767px) {
+      padding-top: 60px;
     }
     @media screen and (min-width: 768px) {
       padding-top: 65px;
     }
-
-    @media screen and (max-width: 767px) {
-      padding-top: 60px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 73px;
     }
     margin-bottom: 20px;
     font-family: $fontRobo;

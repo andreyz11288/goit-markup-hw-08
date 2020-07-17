@@ -1,7 +1,6 @@
 .heder-address {
   margin-left: auto;
-  @media screen and (min-width: 768px) {
-  }
+
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
@@ -16,23 +15,25 @@
   }
 }
 .section-nav-contact {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    & > li:first-child {
-      margin-right: 30px;
-      font-size: 14px;
-      line-height: 16px;
-    }
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 21px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.02em;
     padding-top: 21px;
   }
-  @media screen and (max-width: 767px) {
-    font-size: 18px;
-    line-height: 21px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    & > li:first-child {
+      margin-right: 30px;
+    }
+    & > li {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
   align-items: baseline;
   font-family: $fontRobo;
@@ -64,11 +65,9 @@
 .nav-email {
   @media screen and (max-width: 767px) {
     min-width: 161px;
-  }
-  @media screen and (max-width: 767px) {
     padding-bottom: 16px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-bottom: 10px;
     width: 131px;
   }

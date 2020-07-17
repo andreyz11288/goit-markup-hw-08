@@ -2,10 +2,6 @@
 .portfolio,
 .contact {
   display: block;
-  @media screen and (min-width: 768px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
 
   @media screen and (max-width: 767px) {
     padding-bottom: 8px;
@@ -13,6 +9,10 @@
     &:not(:first-child) {
       padding-top: 40px;
     }
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .n-menu {

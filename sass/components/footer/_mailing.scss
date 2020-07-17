@@ -1,19 +1,19 @@
 .section-mailing {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-left: 166px;
     padding-bottom: 60px;
   }
 }
 .mailing {
-  @media screen and (min-width: 1200px) {
-    padding-top: 72px;
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 60px;
     text-align: center;
   }
-  @media screen and (max-width: 767px) {
-    padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 72px;
   }
   font-family: $fontRobo;
   font-style: $fontNorm;
@@ -25,12 +25,11 @@
   color: $white-color;
 
   &-content {
-    @media screen and (min-width: 1200px) {
-      display: flex;
-    }
-
     @media screen and (max-width: 767px) {
       margin-top: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
     }
   }
 }
@@ -51,16 +50,16 @@
 }
 
 .footer-input {
-  // margin-top: 20px;
-  @media screen and (min-width: 1200px) {
-    width: 358px;
+  @media screen and (max-width: 767px) {
+    width: 450px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 450px;
     margin-top: 20px;
   }
-  @media screen and (max-width: 767px) {
-    width: 450px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-top: 20px;
   }
   height: 50px;
   padding-left: 16px;
@@ -85,10 +84,10 @@
 .footer-button {
   @media screen and (max-width: 767px) {
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     margin-left: auto;
     margin-right: auto;
   }
