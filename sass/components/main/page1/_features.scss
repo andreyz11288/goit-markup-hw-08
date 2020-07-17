@@ -9,6 +9,9 @@
     flex-wrap: wrap;
     li {
       width: 354px;
+      &:nth-child(-n + 2) {
+        margin-bottom: 30px;
+      }
       &:nth-child(2n + 1) {
         margin-right: 30px;
       }

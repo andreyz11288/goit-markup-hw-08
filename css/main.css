@@ -811,6 +811,9 @@ body.modal-open {
   .features li {
     width: 354px;
   }
+  .features li:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
   .features li:nth-child(2n + 1) {
     margin-right: 30px;
   }
@@ -1041,6 +1044,8 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .section-team h2 {
     padding-top: 60px;
+    font-size: 28px;
+    line-height: 33px;
   }
 }
 
@@ -1353,6 +1358,8 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .section-clients h2 {
     padding-top: 60px;
+    font-size: 28px;
+    line-height: 33px;
   }
 }
 
