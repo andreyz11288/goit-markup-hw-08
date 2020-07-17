@@ -30,9 +30,21 @@
       margin-bottom: 0px;
     }
   }
-  // @media screen and (max-width: 767px) {
-  //   top: 142px;
-  // }
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    & > li {
+      width: 354px;
+
+      &:nth-child(2n + 1) {
+        margin-right: 30px;
+      }
+      &:last-child {
+        margin: 0px;
+      }
+    }
+  }
 
   a > p {
     color: $second-color;
@@ -68,6 +80,11 @@
   position: relative;
   margin-bottom: 20px;
   overflow: hidden;
+  @media screen and (min-width: 768px) {
+    & > img {
+      width: 354px;
+    }
+  }
 }
 .background-hov-text {
   width: 100%;

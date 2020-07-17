@@ -2224,6 +2224,14 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .section-filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .filter {
   padding: 6px 22px;
   font-family: Roboto;
@@ -2291,6 +2299,26 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .main-content {
+    padding-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-content > li {
+    width: 354px;
+  }
+  .main-content > li:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .main-content > li:last-child {
+    margin: 0px;
+  }
+}
+
 .main-content a > p {
   color: #757575;
 }
@@ -2328,6 +2356,12 @@ textarea {
   position: relative;
   margin-bottom: 20px;
   overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .images-box > img {
+    width: 354px;
+  }
 }
 
 .background-hov-text {
