@@ -1,6 +1,18 @@
 .features {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    width: 738px;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      width: 354px;
+      &:nth-child(2n + 1) {
+        margin-right: 30px;
+      }
+    }
   }
 
   h3 {
@@ -63,8 +75,11 @@
   @media screen and (max-width: 767px) {
     width: 450px;
   }
-
   @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 120px;
+  }
+  @media screen and (min-width: 1200px) {
     width: 270px;
     height: 120px;
   }

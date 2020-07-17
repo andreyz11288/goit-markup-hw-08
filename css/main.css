@@ -790,11 +790,29 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .features {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    padding-top: 60px;
+    width: 738px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .features li {
+    width: 354px;
+  }
+  .features li:nth-child(2n + 1) {
+    margin-right: 30px;
   }
 }
 
@@ -881,6 +899,13 @@ body.modal-open {
 }
 
 @media screen and (min-width: 768px) {
+  .features-div {
+    width: 354px;
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .features-div {
     width: 270px;
     height: 120px;
