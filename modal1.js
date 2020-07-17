@@ -4,11 +4,8 @@
   menuBtnRef.addEventListener("click", () => {
     menuBtnRef.classList.toggle("is-open");
   });
-  $(document).ready(function () {
-    $(".modal-menu-open").click(function () {
-      $(".heder-address").toggleClass("is-open");
-      $(".header-backgroup").toggleClass("is-open");
-      return false;
-    });
-  });
+
+  document.getElementById("modal-menu-open").onclick = function () {
+    document.getElementById("heder-address").classList.toggle("is-open");
+  };
 })();

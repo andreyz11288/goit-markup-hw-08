@@ -10,10 +10,6 @@
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <script
-      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
-      type="text/javascript"
-    ></script>
   </head>
 
   <body>
@@ -26,6 +22,7 @@
           <button
             aria-expanded="false"
             data-menu-button
+            id="modal-menu-open"
             class="modal-menu-open"
           >
             <svg
@@ -62,7 +59,7 @@
             </li>
           </ul>
         </nav>
-        <address class="heder-address">
+        <address id="heder-address" class="heder-address">
           <ul class="section-nav-contact">
             <li>
               <a class="nav-email" href="mailto:info@devstudio.com"
