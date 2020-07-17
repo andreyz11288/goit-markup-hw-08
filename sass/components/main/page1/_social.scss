@@ -8,6 +8,9 @@
     padding-left: 122px;
     width: 328px;
   }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 
   & > li {
     padding-bottom: 24px;

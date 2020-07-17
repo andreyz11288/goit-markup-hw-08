@@ -1000,6 +1000,12 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .section-team {
+    margin-top: 60px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .section-team {
     padding-bottom: 60px;
@@ -1031,6 +1037,12 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .section-team h2 {
+    padding-top: 60px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .section-team h2 {
     font-size: 28px;
@@ -1052,6 +1064,22 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .team .div-img {
+    height: 260px;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .team > li:not(:last-child) {
     margin-bottom: 30px;
@@ -1068,6 +1096,18 @@ body.modal-open {
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .team > li {
+    width: 354px;
+  }
+  .team > li:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .team > li:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
 }
 
 .team h3 {
@@ -1106,6 +1146,12 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .team-john, .team-marta, .team-robert, .team-martin {
+    width: 354px;
+  }
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1123,6 +1169,14 @@ body.modal-open {
   .social {
     padding-left: 122px;
     width: 328px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
