@@ -1733,6 +1733,12 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .backdrop {
+    overflow-y: scroll;
+  }
+}
+
 .is-hidden {
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
@@ -1751,17 +1757,17 @@ body.modal-open {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     height: 581px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .modal {
-    width: 450px;
-    height: 609px;
   }
 }
 
@@ -1780,7 +1786,7 @@ body.modal-open {
   color: #212121;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal-p {
     font-size: 20px;
     line-height: 30px;
@@ -1835,7 +1841,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal-name,
   .modal-tell,
   .modal-email,
@@ -1870,7 +1876,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal-tell {
     top: 198px;
   }
@@ -1882,7 +1888,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal-email {
     top: 266px;
   }
@@ -1902,7 +1908,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal-comments {
     top: 334px;
     width: 370px;
@@ -1948,7 +1954,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .go {
     top: 519px;
   }
@@ -1982,7 +1988,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .label-name {
     top: 142px;
   }
@@ -1994,7 +2000,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .label-tell {
     top: 210px;
   }
@@ -2006,7 +2012,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .label-email {
     top: 278px;
   }
@@ -2018,7 +2024,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .label-comments {
     top: 346px;
   }
@@ -2070,7 +2076,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .label-contract {
     top: 474px;
     left: 40px;
@@ -2084,7 +2090,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .label-contract {
     font-size: 12px;
     line-height: 14px;
@@ -2118,7 +2124,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .link-contract {
     font-size: 12px;
     line-height: 14px;
