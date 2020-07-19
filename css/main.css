@@ -279,11 +279,27 @@ summary {
   display: list-item;
 }
 
+body {
+  width: device-width;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -707,7 +723,7 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .overlay {
-    width: 480px;
+    min-width: 480px;
     height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/480/header-img-tel.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/480/header-img-tel.jpg);
@@ -716,7 +732,7 @@ body.modal-open {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .overlay {
-    width: 768px;
+    min-width: 768px;
     height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/768/header-img-tabl.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/768/header-img-tabl.jpg);
@@ -725,7 +741,7 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .overlay {
-    width: 1600px;
+    min-width: 1600px;
     height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/header-img.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/header-img.jpg);
