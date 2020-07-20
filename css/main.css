@@ -288,7 +288,6 @@ summary {
 
 @media screen and (max-width: 767px) {
   .container {
-    max-width: 480px;
     width: 100%;
   }
 }
@@ -1281,6 +1280,7 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .clients {
+    display: table;
     max-width: 450px;
     margin-top: 30px;
     width: 100%;
@@ -1290,9 +1290,11 @@ body.modal-open {
     display: -ms-inline-flexbox;
     display: inline-flex;
     margin-bottom: 30px;
+    max-width: calc((100% - 30px) / 2);
+    width: 100%;
   }
   .clients li:nth-child(2n + 1) {
-    margin-right: 26px;
+    margin-right: 30px;
   }
   .clients li:nth-last-child(-n + 2) {
     margin-bottom: 0px;
@@ -1344,7 +1346,7 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .clients a {
-    width: 210px;
+    width: 100%;
   }
 }
 
@@ -1674,7 +1676,8 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .footer-input {
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
   }
 }
 
