@@ -1280,7 +1280,11 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .clients {
-    display: table;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     max-width: 450px;
     margin-top: 30px;
     width: 100%;

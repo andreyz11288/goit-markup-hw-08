@@ -1,6 +1,8 @@
 .clients {
   @media screen and (max-width: 767px) {
-    display: table;
+    // display: table;
+    display: flex;
+    flex-wrap: wrap;
     max-width: 450px;
     margin-top: 30px;
     width: 100%;
