@@ -1126,7 +1126,6 @@ body.modal-open {
     margin-bottom: 30px;
   }
   .team .div-img {
-    height: 320px;
     margin-bottom: 30px;
   }
 }
@@ -1176,7 +1175,6 @@ body.modal-open {
 
 .team-john, .team-marta, .team-robert, .team-martin {
   display: inline-block;
-  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 767px) {
