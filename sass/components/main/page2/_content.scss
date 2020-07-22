@@ -109,7 +109,7 @@
 
 .hov-text {
   display: inline-block;
-  padding: 63px 24px;
+  padding: 77px 24px;
   font-family: $fontRobo;
   font-style: $fontNorm;
   font-weight: $fontNorm;
@@ -119,4 +119,7 @@
   letter-spacing: 0.03em;
 
   color: $white-color;
+  @media screen and (min-width: 768px) {
+    padding: 63px 24px;
+  }
 }
