@@ -386,24 +386,21 @@ body.modal-open {
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0.03em;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 @media screen and (max-width: 767px) {
   .header-logo {
-    padding-bottom: 16px;
-    padding-top: 16px;
     padding-left: 15px;
-    font-size: 24px;
-    line-height: 28px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .header-logo {
-    padding-bottom: 16px;
     padding-top: 26px;
-    font-size: 24px;
-    line-height: 28px;
     margin-right: 81px;
   }
 }
@@ -484,15 +481,11 @@ body.modal-open {
 .portfolio,
 .contact {
   display: block;
+  padding-bottom: 8px;
+  padding-top: 40px;
 }
 
 @media screen and (max-width: 767px) {
-  .studio,
-  .portfolio,
-  .contact {
-    padding-bottom: 8px;
-    padding-top: 40px;
-  }
   .studio:not(:first-child),
   .portfolio:not(:first-child),
   .contact:not(:first-child) {
@@ -605,6 +598,8 @@ body.modal-open {
 }
 
 .section-nav-contact {
+  font-size: 18px;
+  line-height: 21px;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -613,13 +608,6 @@ body.modal-open {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #757575;
-}
-
-@media screen and (max-width: 767px) {
-  .section-nav-contact {
-    font-size: 18px;
-    line-height: 21px;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -704,7 +692,7 @@ body.modal-open {
 
 .svg-nav-tel {
   display: block;
-  width: 11px;
+  width: 13px;
   height: 17px;
   margin-right: 10px;
 }
@@ -716,20 +704,15 @@ body.modal-open {
 }
 
 .overlay {
+  max-width: 480px;
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/480/header-img-tel.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/480/header-img-tel.jpg);
+  background-size: 480px 400px;
   background-color: #757575;
 }
 
-@media screen and (max-width: 767px) {
-  .overlay {
-    max-width: 480px;
-    height: 400px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/480/header-img-tel.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/480/header-img-tel.jpg);
-    background-size: 480px 400px;
-  }
-}
-
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/480/header-img-tel-2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/480/header-img-tel-2x.jpg");
@@ -808,6 +791,9 @@ body.modal-open {
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  padding-top: 118px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
@@ -821,14 +807,6 @@ body.modal-open {
     font-size: 44px;
     line-height: 136%;
     padding-top: 200px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .content-text {
-    font-size: 26px;
-    line-height: 42px;
-    padding-top: 118px;
   }
 }
 
@@ -1385,6 +1363,8 @@ body.modal-open {
 }
 
 .section-clients h2 {
+  font-size: 28px;
+  line-height: 33px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -1393,24 +1373,9 @@ body.modal-open {
   color: #212121;
 }
 
-@media screen and (max-width: 767px) {
-  .section-clients h2 {
-    padding-top: 60px;
-    font-size: 28px;
-    line-height: 33px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .section-clients h2 {
-    padding-top: 60px;
-    font-size: 28px;
-    line-height: 33px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .section-clients h2 {
+    padding-top: 0px;
     font-size: 36px;
     line-height: 42px;
     margin-bottom: 50px;
@@ -1455,13 +1420,8 @@ body.modal-open {
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0.03em;
-}
-
-@media screen and (max-width: 1199px) {
-  .footer-logo {
-    font-size: 24px;
-    line-height: 28px;
-  }
+  font-size: 24px;
+  line-height: 28px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1571,6 +1531,7 @@ body.modal-open {
 }
 
 .join-in > h3 {
+  padding-top: 60px;
   margin-bottom: 20px;
   font-family: Roboto;
   font-style: normal;
@@ -1581,12 +1542,6 @@ body.modal-open {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-}
-
-@media screen and (max-width: 767px) {
-  .join-in > h3 {
-    padding-top: 60px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1609,6 +1564,7 @@ body.modal-open {
 }
 
 .mailing {
+  padding-top: 60px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -1619,15 +1575,8 @@ body.modal-open {
   color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
-  .mailing {
-    padding-top: 60px;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .mailing {
-    padding-top: 60px;
     text-align: center;
   }
 }

@@ -6,22 +6,36 @@
   }
 }
 .overlay {
-  @media screen and (max-width: 767px) {
-    max-width: 480px;
-    height: 400px;
-
+  max-width: 480px;
+  height: 400px;
+  background-image: linear-gradient(to right, $bgp, $bgp),
+    url(../images/480/header-img-tel.jpg);
+  background-size: 480px 400px;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, $bgp, $bgp),
-      url(../images/480/header-img-tel.jpg);
-    background-size: 480px 400px;
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (-webkit-min-device-pixel-ratio: 2),
-      screen and (-o-min-device-pixel-ratio: 2/1),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(to right, $bgp, $bgp),
-        url("../images/480/header-img-tel-2x.jpg");
-    }
+      url("../images/480/header-img-tel-2x.jpg");
   }
+
+  // @media screen and (max-width: 767px) {
+  //   max-width: 480px;
+  //   height: 400px;
+
+  //   background-image: linear-gradient(to right, $bgp, $bgp),
+  //     url(../images/480/header-img-tel.jpg);
+  //   background-size: 480px 400px;
+  //   @media screen and (min-device-pixel-ratio: 2),
+  //     screen and (-webkit-min-device-pixel-ratio: 2),
+  //     screen and (-o-min-device-pixel-ratio: 2/1),
+  //     screen and (min-resolution: 192dpi),
+  //     screen and (min-resolution: 2dppx) {
+  //     background-image: linear-gradient(to right, $bgp, $bgp),
+  //       url("../images/480/header-img-tel-2x.jpg");
+  //   }
+  // }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 768px;
     height: 400px;
@@ -87,16 +101,19 @@
   font-family: $fontRobo;
   font-style: $fontNorm;
   font-weight: $font900;
+  font-size: 26px;
+  line-height: 42px;
+  padding-top: 118px;
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 136%;
     padding-top: 200px;
   }
-  @media screen and (max-width: 1199px) {
-    font-size: 26px;
-    line-height: 42px;
-    padding-top: 118px;
-  }
+  // @media screen and (max-width: 1199px) {
+  //   font-size: 26px;
+  //   line-height: 42px;
+  //   padding-top: 118px;
+  // }
 
   letter-spacing: 0.06em;
   text-transform: uppercase;

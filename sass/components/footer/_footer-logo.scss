@@ -6,10 +6,12 @@
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0.03em;
-  @media screen and (max-width: 1199px) {
-    font-size: 24px;
-    line-height: 28px;
-  }
+  font-size: 24px;
+  line-height: 28px;
+  // @media screen and (max-width: 1199px) {
+  //   font-size: 24px;
+  //   line-height: 28px;
+  // }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-left: 100px;
   }

@@ -3,19 +3,22 @@
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0.03em;
-
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  line-height: 28px;
   @media screen and (max-width: 767px) {
-    padding-bottom: 16px;
-    padding-top: 16px;
+    // padding-bottom: 16px;
+    // padding-top: 16px;
     padding-left: 15px;
-    font-size: 24px;
-    line-height: 28px;
+    // font-size: 24px;
+    // line-height: 28px;
   }
   @media screen and (min-width: 768px) {
-    padding-bottom: 16px;
+    // padding-bottom: 16px;
     padding-top: 26px;
-    font-size: 24px;
-    line-height: 28px;
+    // font-size: 24px;
+    // line-height: 28px;
     margin-right: 81px;
   }
   @media screen and (min-width: 1200px) {

@@ -7,5 +7,10 @@
 
   document.getElementById("modal-menu-open").onclick = function () {
     document.getElementById("heder-address").classList.toggle("is-open");
+    document.getElementById("header-backgroup").classList.toggle("is-open");
   };
+
+  // document.getElementById("modal-menu-open").onclick = function () {
+  //   document.getElementById("header-backgroup").classList.toggle("is-open");
+  // };
 })();

@@ -15,10 +15,12 @@
   }
 }
 .section-nav-contact {
-  @media screen and (max-width: 767px) {
-    font-size: 18px;
-    line-height: 21px;
-  }
+  font-size: 18px;
+  line-height: 21px;
+  // @media screen and (max-width: 767px) {
+  //   font-size: 18px;
+  //   line-height: 21px;
+  // }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 12px;
     line-height: 14px;
@@ -86,7 +88,7 @@
 
 .svg-nav-tel {
   display: block;
-  width: 11px;
+  width: 13px;
   height: 17px;
   margin-right: 10px;
 }
