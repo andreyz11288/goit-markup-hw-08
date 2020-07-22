@@ -339,7 +339,7 @@ textarea {
 .contract:checked ~ .check::before {
   border: 0px;
   background: $link;
-  background-image: url(../images/check.svg);
+  background-image: url(../images/svg/check.svg);
 }
 
 .backdrop {
