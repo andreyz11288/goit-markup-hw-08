@@ -80,15 +80,23 @@
   position: relative;
   margin-bottom: 20px;
   overflow: hidden;
+  & > img {
+    width: 100%;
+  }
   @media screen and (max-width: 767px) {
-    & > img {
-      width: 100%;
-    }
+    width: 450px;
+    // & > img {
+    //   width: 100%;
+    // }
   }
   @media screen and (min-width: 768px) and(max-width: 1199px ) {
+    width: 354px;
     & > img {
       max-width: 354px;
     }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
   }
 }
 .background-hov-text {
