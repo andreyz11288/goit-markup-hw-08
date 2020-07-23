@@ -1365,6 +1365,7 @@ body.modal-open {
 .section-clients h2 {
   font-size: 28px;
   line-height: 33px;
+  padding-top: 60px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
