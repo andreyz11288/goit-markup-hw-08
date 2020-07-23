@@ -634,12 +634,29 @@ body.modal-open {
   }
 }
 
+.svg-nav-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.svg-nav-tel {
+  display: block;
+  width: 13px;
+  height: 17px;
+  margin-right: 10px;
+}
+
 .nav-email,
 .nav-tel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   min-width: 142px;
+  fill: #757575;
   color: #757575;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -679,22 +696,6 @@ body.modal-open {
   .nav-tel {
     padding-left: 11px;
   }
-}
-
-.svg-nav-email {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-}
-
-.svg-nav-tel {
-  display: block;
-  width: 13px;
-  height: 17px;
-  margin-right: 10px;
 }
 
 @media screen and (max-width: 767px) {

@@ -44,11 +44,26 @@
   letter-spacing: 0.02em;
   color: $second-color;
 }
+.svg-nav-email {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  // fill: $second-color;
+}
 
+.svg-nav-tel {
+  display: block;
+  width: 13px;
+  height: 17px;
+  margin-right: 10px;
+  // fill: $second-color;
+}
 .nav-email,
 .nav-tel {
   display: flex;
   min-width: 142px;
+  fill: $second-color;
 
   color: $second-color;
   @media screen and (min-width: 1200px) {
@@ -79,16 +94,18 @@
     padding-left: 11px;
   }
 }
-.svg-nav-email {
-  display: flex;
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-}
+// .svg-nav-email {
+//   display: flex;
+//   width: 16px;
+//   height: 16px;
+//   margin-right: 10px;
+//   fill: $second-color;
+// }
 
-.svg-nav-tel {
-  display: block;
-  width: 13px;
-  height: 17px;
-  margin-right: 10px;
-}
+// .svg-nav-tel {
+//   display: block;
+//   width: 13px;
+//   height: 17px;
+//   margin-right: 10px;
+//   fill: $second-color;
+// }
