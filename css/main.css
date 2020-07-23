@@ -1083,7 +1083,6 @@ body.modal-open {
   }
   .team .div-img {
     height: 260px;
-    margin-bottom: 30px;
   }
 }
 
@@ -1103,9 +1102,10 @@ body.modal-open {
   .team > li:not(:last-child) {
     margin-bottom: 30px;
   }
-  .team .div-img {
-    margin-bottom: 30px;
-  }
+}
+
+.team .div-img {
+  margin-bottom: 30px;
 }
 
 .team > li {

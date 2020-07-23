@@ -56,7 +56,7 @@
     .div-img {
       height: 260px;
       // overflow: hidden;
-      margin-bottom: 30px;
+      // margin-bottom: 30px;
     }
   }
   @media screen and (min-width: 1200px) {
@@ -70,9 +70,9 @@
     & > li:not(:last-child) {
       margin-bottom: 30px;
     }
-    .div-img {
-      margin-bottom: 30px;
-    }
+  }
+  .div-img {
+    margin-bottom: 30px;
   }
 
   & > li {
