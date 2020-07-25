@@ -2338,6 +2338,15 @@ textarea {
   color: #212121;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 310px;
+    text-overflow: ellipsis;
+  }
+}
+
 .blackout > p {
   font-family: Roboto;
   font-style: normal;
