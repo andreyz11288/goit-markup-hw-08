@@ -2394,10 +2394,12 @@ textarea {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .images-box {
-    width: 354px;
+    max-width: 354px;
+    width: 100%;
   }
   .images-box > img {
     max-width: 354px;
+    width: 100%;
   }
 }
 
@@ -2425,6 +2427,22 @@ textarea {
   -webkit-transform: translateY(-297px);
           transform: translateY(-297px);
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .blackout:hover .background-hov-text,
+  .blackout:focus .background-hov-text {
+    -webkit-transform: translateY(-360px);
+            transform: translateY(-360px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .blackout:hover .background-hov-text,
+  .blackout:focus .background-hov-text {
+    -webkit-transform: translateY(-285px);
+            transform: translateY(-285px);
+  }
 }
 
 .hov-text {
