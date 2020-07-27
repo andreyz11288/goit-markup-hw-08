@@ -16,7 +16,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 470px) {
+    top: 360px;
+    width: calc(100% - 10px);
+    height: 609px;
+  }
+  @media screen and (min-width: 471px) and (max-width: 1199px) {
     width: 450px;
     height: 609px;
   }

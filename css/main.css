@@ -1760,7 +1760,15 @@ body.modal-open {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 470px) {
+  .modal {
+    top: 360px;
+    width: calc(100% - 10px);
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 471px) and (max-width: 1199px) {
   .modal {
     width: 450px;
     height: 609px;
