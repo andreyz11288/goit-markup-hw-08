@@ -78,7 +78,8 @@ textarea {
   }
   @media screen and (max-width: 1199px) {
     top: 130px;
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
   }
   padding-left: 42px;
   left: 50%;
@@ -135,7 +136,8 @@ textarea {
   }
   @media screen and (max-width: 1199px) {
     top: 334px;
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
   }
 
   height: 120px;
@@ -166,7 +168,8 @@ textarea {
     top: 519px;
   }
 
-  width: 200px;
+  max-width: 200px;
+  width: 100%;
   height: 50px;
 
   background-color: #188ce8;
