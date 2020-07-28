@@ -309,19 +309,6 @@ summary {
   margin-right: auto;
 }
 
-@media screen and (max-width: 767px) {
-  .container2 {
-    max-width: 480px;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container2 {
-    width: 768px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .container2 {
     max-width: 1600px;
@@ -722,7 +709,6 @@ body.modal-open {
 }
 
 .overlay {
-  max-width: 480px;
   height: 400px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/480/header-img-tel.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/480/header-img-tel.jpg);
@@ -739,7 +725,6 @@ body.modal-open {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .overlay {
-    max-width: 768px;
     height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/768/header-img-tabl.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/768/header-img-tabl.jpg);
@@ -933,15 +918,8 @@ body.modal-open {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 767px) {
-  .features-div {
-    max-width: 450px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .features-div {
-    width: 354px;
     height: 120px;
   }
 }
@@ -1036,7 +1014,6 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .section-team {
     padding-bottom: 60px;
-    max-width: 480px;
   }
 }
 
@@ -1087,6 +1064,12 @@ body.modal-open {
     line-height: 42px;
     padding-top: 94px;
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team-container {
+    max-width: 450px;
   }
 }
 
@@ -1299,6 +1282,8 @@ body.modal-open {
     max-width: 450px;
     margin-top: 30px;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .clients li {
     display: -webkit-inline-box;
@@ -1665,6 +1650,8 @@ body.modal-open {
   .footer-input {
     max-width: 450px;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -2295,6 +2282,14 @@ textarea {
           box-sizing: border-box;
   -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 767px) {
+  .main-content {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
