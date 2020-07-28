@@ -118,10 +118,13 @@
     width: 370px;
   }
 }
-.background-hov-text {
+
+.hov-text {
   width: 100%;
   height: 100%;
   position: absolute;
+  top: 0px;
+  transform: translateY(100%);
   opacity: 0;
   transition: opacity $transition, transform $transition;
   background-color: rgba(33, 150, 243, 0.9);
@@ -129,20 +132,11 @@
   .blackout:hover &,
   .blackout:focus & {
     opacity: 0.8;
-    transform: translateY(-360px);
+    transform: translateY(0%);
     cursor: pointer;
-    @media screen and (min-width: 1200px) {
-      transform: translateY(-297px);
-    }
-    @media screen and (min-width: 768px) and(max-width: 1199px ) {
-      transform: translateY(-285px);
-    }
   }
-}
-
-.hov-text {
-  display: inline-block;
-  padding: 77px 24px;
+  display: block;
+  padding: 15% 24px 12% 24px;
   font-family: $fontRobo;
   font-style: $fontNorm;
   font-weight: $fontNorm;

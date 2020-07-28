@@ -2421,45 +2421,21 @@ textarea {
   }
 }
 
-.background-hov-text {
+.hov-text {
   width: 100%;
   height: 100%;
   position: absolute;
+  top: 0px;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
   opacity: 0;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(33, 150, 243, 0.9);
-}
-
-.blackout:hover .background-hov-text,
-.blackout:focus .background-hov-text {
-  opacity: 0.8;
-  -webkit-transform: translateY(-360px);
-          transform: translateY(-360px);
-  cursor: pointer;
-}
-
-@media screen and (min-width: 1200px) {
-  .blackout:hover .background-hov-text,
-  .blackout:focus .background-hov-text {
-    -webkit-transform: translateY(-297px);
-            transform: translateY(-297px);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .blackout:hover .background-hov-text,
-  .blackout:focus .background-hov-text {
-    -webkit-transform: translateY(-285px);
-            transform: translateY(-285px);
-  }
-}
-
-.hov-text {
-  display: inline-block;
-  padding: 77px 24px;
+  display: block;
+  padding: 15% 24px 12% 24px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -2467,6 +2443,14 @@ textarea {
   line-height: 28px;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+.blackout:hover .hov-text,
+.blackout:focus .hov-text {
+  opacity: 0.8;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
