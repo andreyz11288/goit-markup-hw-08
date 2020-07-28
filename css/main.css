@@ -443,7 +443,9 @@ body.modal-open {
 .modal-menu {
   position: absolute;
   top: 60px;
-  left: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: none;
   z-index: 1;
   width: 480px;
@@ -709,10 +711,12 @@ body.modal-open {
 }
 
 .overlay {
+  max-width: 767px;
   height: 400px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/480/header-img-tel.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/480/header-img-tel.jpg);
-  background-size: 480px 400px;
+  background-size: auto 400px;
+  background-repeat: no-repeat;
   background-color: #757575;
 }
 
@@ -723,23 +727,26 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .overlay {
     height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/768/header-img-tabl.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/768/header-img-tabl.jpg);
     background-size: 768px 400px;
   }
+  .overlay-backgroup {
+    height: 164px;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (max-width: 768px) and (min-resolution: 2dppx) {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/768/header-img-tabl-2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/768/header-img-tabl-2x.jpg");
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .overlay {
     max-width: 1600px;
     height: 600px;
@@ -750,7 +757,14 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .overlay-backgroup {
+    height: 164px;
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/1200/header-img-2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/1200/header-img-2x.jpg");

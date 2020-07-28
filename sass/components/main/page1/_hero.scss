@@ -6,11 +6,12 @@
   }
 }
 .overlay {
-  // max-width: 480px;
+  max-width: 767px;
   height: 400px;
   background-image: linear-gradient(to right, $bgp, $bgp),
     url(../images/480/header-img-tel.jpg);
-  background-size: 480px 400px;
+  background-size: auto 400px;
+  background-repeat: no-repeat;
   @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
     screen and (-o-min-device-pixel-ratio: 2/1),
@@ -36,8 +37,11 @@
   //       url("../images/480/header-img-tel-2x.jpg");
   //   }
   // }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 481px) and (max-width: 768px) {
     // max-width: 768px;
+    &-backgroup {
+      height: 164px;
+    }
     height: 400px;
     background-image: linear-gradient(to right, $bgp, $bgp),
       url(../images/768/header-img-tabl.jpg);
@@ -51,7 +55,13 @@
         url("../images/768/header-img-tabl-2x.jpg");
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 769px) {
+    @media screen and (max-width: 1199px) {
+      &-backgroup {
+        height: 164px;
+        padding-top: 100px;
+      }
+    }
     max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(to right, $bgp, $bgp),
