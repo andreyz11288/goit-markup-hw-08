@@ -136,7 +136,7 @@
     cursor: pointer;
   }
   display: block;
-  padding: 15% 24px 12% 24px;
+  padding: 15% 5.333% 12% 5.333%;
   font-family: $fontRobo;
   font-style: $fontNorm;
   font-weight: $fontNorm;
@@ -146,6 +146,11 @@
   letter-spacing: 0.03em;
 
   color: $white-color;
+  @media screen and (max-width: 359px) {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
   @media screen and (min-width: 768px) {
     padding: 63px 24px;
   }

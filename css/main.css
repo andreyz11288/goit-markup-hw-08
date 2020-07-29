@@ -2438,7 +2438,7 @@ textarea {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(33, 150, 243, 0.9);
   display: block;
-  padding: 15% 24px 12% 24px;
+  padding: 15% 5.333% 12% 5.333%;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -2454,6 +2454,13 @@ textarea {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   cursor: pointer;
+}
+
+@media screen and (max-width: 359px) {
+  .hov-text {
+    font-size: 12px;
+    line-height: 22px;
+  }
 }
 
 @media screen and (min-width: 768px) {
